@@ -3,26 +3,8 @@
 
 
 
-rust_library {
-    name: "libbase64_rust",
-    stem: "libbase64",
-    host_supported: true,
-    crate_name: "base64",
-    srcs: ["src/lib.rs"],
-    edition: "2018",
-    features: [
-        "default",
-        "std",
-    ],
-    apex_available: [
-        "//apex_available:platform",
-        "com.android.resolv",
-    ],
-    min_sdk_version: "29",
-}
-
 rust_defaults {
-    name: "base64_defaults_base64",
+    name: "base64_defaults",
     crate_name: "base64",
     test_suites: ["general-tests"],
     auto_gen_config: true,
@@ -41,7 +23,7 @@ rust_defaults {
 
 rust_test_host {
     name: "base64_host_test_tests_decode",
-    defaults: ["base64_defaults_base64"],
+    defaults: ["base64_defaults"],
     srcs: ["tests/decode.rs"],
     test_options: {
         unit_test: true,
@@ -50,13 +32,13 @@ rust_test_host {
 
 rust_test {
     name: "base64_device_test_tests_decode",
-    defaults: ["base64_defaults_base64"],
+    defaults: ["base64_defaults"],
     srcs: ["tests/decode.rs"],
 }
 
 rust_test_host {
     name: "base64_host_test_tests_encode",
-    defaults: ["base64_defaults_base64"],
+    defaults: ["base64_defaults"],
     srcs: ["tests/encode.rs"],
     test_options: {
         unit_test: true,
@@ -65,13 +47,13 @@ rust_test_host {
 
 rust_test {
     name: "base64_device_test_tests_encode",
-    defaults: ["base64_defaults_base64"],
+    defaults: ["base64_defaults"],
     srcs: ["tests/encode.rs"],
 }
 
 rust_test_host {
     name: "base64_host_test_tests_helpers",
-    defaults: ["base64_defaults_base64"],
+    defaults: ["base64_defaults"],
     srcs: ["tests/helpers.rs"],
     test_options: {
         unit_test: true,
@@ -80,7 +62,24 @@ rust_test_host {
 
 rust_test {
     name: "base64_device_test_tests_helpers",
-    defaults: ["base64_defaults_base64"],
+    defaults: ["base64_defaults"],
     srcs: ["tests/helpers.rs"],
 }
 
+rust_library {
+    name: "libbase64_rust",
+    stem: "libbase64",
+    host_supported: true,
+    crate_name: "base64",
+    srcs: ["src/lib.rs"],
+    edition: "2018",
+    features: [
+        "default",
+        "std",
+    ],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.resolv",
+    ],
+    min_sdk_version: "29",
+}
