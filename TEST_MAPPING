@@ -9,6 +9,27 @@
     },
     {
       "name": "base64_device_test_tests_helpers"
+    },
+    {
+      "name": "doh_unit_test"
+    },
+    {
+      "name": "libapkverify.integration_test"
+    },
+    {
+      "name": "libapkverify.test"
+    },
+    {
+      "name": "microdroid_manager_test"
+    },
+    {
+      "name": "webpki_device_test_src_lib"
+    },
+    {
+      "name": "webpki_device_test_tests_dns_name_tests"
+    },
+    {
+      "name": "webpki_device_test_tests_integration"
     }
   ]
 }
