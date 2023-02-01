@@ -7,21 +7,5 @@
     {
       "path": "packages/modules/DnsResolver"
     }
-  ],
-  "presubmit": [
-    {
-      "name": "base64_test_tests_decode"
-    },
-    {
-      "name": "base64_test_tests_encode"
-    }
-  ],
-  "presubmit-rust": [
-    {
-      "name": "base64_test_tests_decode"
-    },
-    {
-      "name": "base64_test_tests_encode"
-    }
   ]
 }
