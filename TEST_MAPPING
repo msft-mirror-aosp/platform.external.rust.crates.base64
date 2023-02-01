@@ -3,6 +3,9 @@
   "imports": [
     {
       "path": "external/rust/crates/webpki"
+    },
+    {
+      "path": "packages/modules/DnsResolver"
     }
   ],
   "presubmit": [
@@ -11,18 +14,6 @@
     },
     {
       "name": "base64_test_tests_encode"
-    },
-    {
-      "name": "doh_unit_test"
-    },
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "microdroid_manager_test"
     }
   ],
   "presubmit-rust": [
@@ -31,18 +22,6 @@
     },
     {
       "name": "base64_test_tests_encode"
-    },
-    {
-      "name": "doh_unit_test"
-    },
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "microdroid_manager_test"
     }
   ]
 }
