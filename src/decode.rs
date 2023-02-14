@@ -71,7 +71,7 @@ impl error::Error for DecodeError {
 }
 
 ///Decode from string reference as octets.
-///Returns a Result containing a Vec<u8>.
+///Returns a Result containing a `Vec<u8>`.
 ///Convenience `decode_config(input, base64::STANDARD);`.
 ///
 ///# Example
@@ -90,7 +90,7 @@ pub fn decode<T: AsRef<[u8]>>(input: T) -> Result<Vec<u8>, DecodeError> {
 }
 
 ///Decode from string reference as octets.
-///Returns a Result containing a Vec<u8>.
+///Returns a Result containing a `Vec<u8>`.
 ///
 ///# Example
 ///
