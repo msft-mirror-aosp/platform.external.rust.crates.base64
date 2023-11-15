@@ -39,7 +39,6 @@ license {
 
 rust_library {
     name: "libbase64_rust",
-    stem: "libbase64",
     host_supported: true,
     crate_name: "base64",
     cargo_env_compat: true,
