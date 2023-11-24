@@ -10,10 +10,10 @@
 # See Cargo.toml.orig for the original contents.
 
 [package]
-edition = "2021"
-rust-version = "1.57.0"
+edition = "2018"
+rust-version = "1.48.0"
 name = "base64"
-version = "0.21.0"
+version = "0.21.5"
 authors = [
     "Alice Maz <alice@alicemaz.com>",
     "Marshall Pierce <marshall@mpierce.org>",
@@ -32,18 +32,37 @@ categories = ["encoding"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/marshallpierce/rust-base64"
 
+[package.metadata.docs.rs]
+rustdoc-args = ["--generate-link-to-definition"]
+
 [profile.bench]
-debug = true
+debug = 2
 
 [profile.test]
 opt-level = 3
 
+[[example]]
+name = "base64"
+required-features = ["std"]
+
+[[test]]
+name = "tests"
+required-features = ["alloc"]
+
+[[test]]
+name = "encode"
+required-features = ["alloc"]
+
 [[bench]]
 name = "benchmarks"
 harness = false
+required-features = ["std"]
 
 [dev-dependencies.criterion]
 version = "0.4.0"
+
+[dev-dependencies.lazy_static]
+version = "1.4.0"
 
 [dev-dependencies.rand]
 version = "0.8.5"
@@ -61,4 +80,4 @@ version = "0.3.26"
 [features]
 alloc = []
 default = ["std"]
-std = []
+std = ["alloc"]
