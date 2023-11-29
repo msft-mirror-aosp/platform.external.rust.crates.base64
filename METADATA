@@ -5,19 +5,19 @@
 name: "base64"
 description: "encodes and decodes base64 as bytes or utf8"
 third_party {
+  url {
+    type: HOMEPAGE
+    value: "https://crates.io/crates/base64"
+  }
+  url {
+    type: ARCHIVE
+    value: "https://static.crates.io/crates/base64/base64-0.21.5.crate"
+  }
+  version: "0.21.5"
   license_type: NOTICE
   last_upgrade_date {
     year: 2023
     month: 11
     day: 24
-  }
-  identifier {
-    type: "HOMEPAGE"
-    value: "https://crates.io/crates/base64"
-  }
-  identifier {
-    type: "ARCHIVE"
-    value: "https://static.crates.io/crates/base64/base64-0.21.5.crate"
-    version: "0.21.5"
   }
 }
