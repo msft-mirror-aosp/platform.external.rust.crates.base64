@@ -42,10 +42,11 @@ rust_library {
     host_supported: true,
     crate_name: "base64",
     cargo_env_compat: true,
-    cargo_pkg_version: "0.21.0",
+    cargo_pkg_version: "0.21.7",
     srcs: ["src/lib.rs"],
-    edition: "2021",
+    edition: "2018",
     features: [
+        "alloc",
         "default",
         "std",
     ],
