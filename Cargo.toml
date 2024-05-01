@@ -13,7 +13,7 @@
 edition = "2018"
 rust-version = "1.48.0"
 name = "base64"
-version = "0.21.7"
+version = "0.22.0"
 authors = [
     "Alice Maz <alice@alicemaz.com>",
     "Marshall Pierce <marshall@mpierce.org>",
