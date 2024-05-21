@@ -45,7 +45,7 @@ rust_library {
     crate_name: "base64",
     cargo_env_compat: true,
     cargo_pkg_version: "0.22.0",
-    srcs: ["src/lib.rs"],
+    crate_root: "src/lib.rs",
     edition: "2018",
     features: [
         "alloc",
